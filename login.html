@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Dashboard Control</title>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+
+            if (code) {
+                // Here you would typically exchange the code for a token using your backend
+                // For now, just redirect to index.html
+                window.location.href = 'index.html';
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-message">
+            <h1 class="Login-word">🖤 Please login first 🖤</h1>
+            <a class="btn btn-secondary" href="https://discord.com/oauth2/authorize?client_id=1299718078866784306&scope=identify+guilds+email&response_type=code&redirect_uri=http://127.0.0.1:5500/dashboard.html" role="button"><i class="fa-cog"></i> Login</a>
+        </div>
+    </div>
+</body>
+</html>
