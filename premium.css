@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0e24;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11112b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.home-btn {
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #161544;
+    border: 1px solid #3a3a55;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.premium-section {
+    text-align: center;
+    padding: 2em;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stars {
+    color: #f1c40f;
+}
+
+.subtitle {
+    margin-top: 0.5em;
+    color: #c4c4c4;
+}
+
+.plan-container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.plan-card {
+    background-color: #1e2038;
+    padding: 2em;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+
+.plan-card ul {
+    list-style: none;
+    color: #a6a6b3;
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+}
+
+.plan-card .price {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+
+.plan-card .discount {
+    font-size: 0.9em;
+    color: #a6a6b3;
+    margin-top: 0.5em;
+}
+
+.plan-card button {
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    background-color: #161544;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
