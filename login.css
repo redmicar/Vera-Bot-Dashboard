@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 21, 75);
+        background-size: cover; 
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+
+h1.Login-word {
+    color: #14074e;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px 0;
+    color: white;
+    background-color: #0f5ba1; /* Discord blue */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #020e31;
+    transform: scale(1.05);
+}
+
+/* Optional: Add a blur effect directly on the body, but this might not work well in all browsers */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('your-image-url.jpg') no-repeat center center fixed; /* Same image */
+    background-size: cover;
+    filter: blur(8px); /* Adjust blur amount as needed */
+    z-index: -1; /* Make sure the blur is behind other content */
+}
